@@ -1,1 +1,1 @@
-'https:/icanhazdadjoke.com'
+https:/icanhazdadjoke.com
