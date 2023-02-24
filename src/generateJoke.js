@@ -6,8 +6,11 @@ function generateJoke() {
         }
     }
 
-    axios.get('https:/icanhazdadjoke.com', config).then(res => {
-        document.getElementById("joke").innerHTML = res.data.joke
+    axios.get("https://raw.githubusercontent.com/HunterXNB/Joke-Generator/main/data/data.md", config).then(res => {
+        axios.get(res.data, config).then(res => {
+            document.getElementById("joke").innerHTML = res.data.joke
+        })
+
     })
 }
 export default generateJoke
